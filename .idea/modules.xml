@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/CodeIntro.iml" filepath="$PROJECT_DIR$/.idea/CodeIntro.iml" />
       <module fileurl="file://$PROJECT_DIR$/main-program/main-program.iml" filepath="$PROJECT_DIR$/main-program/main-program.iml" />
       <module fileurl="file://$PROJECT_DIR$/sorting-algorithms/sorting-algorithms.iml" filepath="$PROJECT_DIR$/sorting-algorithms/sorting-algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-server/web-server.iml" filepath="$PROJECT_DIR$/web-server/web-server.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,55 @@
+plugins {
+    id 'java'
+
+    id 'application'
+
+    //id 'org.springframework.boot' version '2.3.3.RELEASE'
+}
+
+version '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+subprojects {
+    version = '1.0'
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        //maven { url 'https://repo.spring.io/release' }
+    }
+
+    apply plugin: 'idea'
+    idea {
+        module {
+            outputDir file('build/classes/main')
+            testOutputDir file('build/classes/test')
+        }
+    }
+    /*if(project.convention.findPlugin(JavaPluginConvention)) {
+        // Change the output directory for the main and test source sets back to the old path
+        sourceSets.main.output.classesDir = new File(buildDir, "classes/main")
+        sourceSets.test.output.classesDir = new File(buildDir, "classes/test")
+    }*/
+}
+
+//apply plugin: 'java'
+//apply plugin: 'org.springframework.boot'
+//apply plugin: 'io.spring.dependency-management'
+
+dependencies {
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:28.1-jre'
+
+    //implementation('org.springframework.boot:spring-boot')
+    //implementation('org.springframework.boot:spring-boot-autoconfigure')
+    //implementation('org.springframework.integration:spring-integration-kafka')
+    //implementation('org.springframework.kafka:spring-kafka')
+
+    //compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.5.5.RELEASE'
+
+    // Use JUnit test framework
+    //testImplementation 'junit:junit:4.12'
+}
+
+mainClassName = 'org.nordstrom.kafkaframework.KafkaApplication'

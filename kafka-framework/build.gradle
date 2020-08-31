@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+
+    id 'application'
+}
+
+dependencies {
+    // This dependency is used by the application.
+    // implementation 'com.google.guava:guava:28.1-jre'
+
+    compile 'org.springframework.boot:spring-boot:2.3.3.RELEASE'
+    compile 'org.springframework.boot:spring-boot-autoconfigure:2.3.3.RELEASE'
+
+    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.5.5.RELEASE'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
+
+mainClassName = 'org.nordstrom.kafkaframework.KafkaApplication'

@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+dependencies {
+    compile project(':sorting-algorithms')
+
+    compile 'org.springframework.boot:spring-boot:2.3.3.RELEASE'
+    compile 'org.springframework.boot:spring-boot-autoconfigure:2.3.3.RELEASE'
+
+    compile group: 'org.springframework.kafka', name: 'spring-kafka', version: '2.5.5.RELEASE'
+}
+
+mainClassName = 'org.nordstrom.mainprogram.MainServer'
